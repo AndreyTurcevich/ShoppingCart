@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply from: '../config.gradle'
+
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        applicationId config.applicationId
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionMajor * 1000 + config.versionMinor * 100 + config.versionPatch
+        versionName "${config.versionMajor}.${config.versionMinor}.${config.versionPatch}"
+        testInstrumentationRunner config.androidJUnitRunner
+        buildConfigField("int", "DATABASE_VERSION", config.databaseVersion)
+        buildConfigField("String", "BASE_URL", '"' + config.base_url + '"' ?: "")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation stdlib
+    implementation androidXlibs.values()
+    implementation navigationLib.values()
+    implementation roomDependencies.values()
+    kapt roomAnnotationProcessor
+    implementation material
+    implementation networkDependencies.values()
+    implementation kotlinCoroutines.values()
+    implementation glide
+    kapt glideCompiler
+}

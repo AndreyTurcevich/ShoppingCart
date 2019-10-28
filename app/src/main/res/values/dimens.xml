@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageListCornerRadius">16dp</dimen>
+    <dimen name="rvHorizontalPadding">8dp</dimen>
+    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="productDetailsNameTextSize">24sp</dimen>
+    <dimen name="productDetailsPriceTextSize">18sp</dimen>
+    <dimen name="productDetailsDescriptionTextSize">16sp</dimen>
+    <dimen name="toolbarTitleTextSize">18sp</dimen>
+    <dimen name="defaultInternalMargin">8dp</dimen>
+    <dimen name="productListNameTextSize">14sp</dimen>
+    <dimen name="productListPriceTextSize">12sp</dimen>
+    <dimen name="messageTextSize">18sp</dimen>
+</resources>

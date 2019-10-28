@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/productsListFragment">
+
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="com.vironit.shoppingcart.ui.list.ProductsListFragment"
+        android:label="Products List Fragment"
+        tools:layout="@layout/fragment_products_list">
+        <action
+            android:id="@+id/navigateToProductDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/navigateToInfoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.vironit.shoppingcart.ui.details.ProductDetailsFragment"
+        android:label="Product Details Fragment"
+        tools:layout="@layout/fragment_product_details">
+        <argument
+            android:name="productId"
+            app:argType="string" />
+        <action
+            android:id="@+id/navigateToProductsListFragment"
+            app:destination="@id/productsListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.vironit.shoppingcart.ui.info.InfoFragment"
+        android:label="Info Fragment"
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/navigateToProductsListFragment"
+            app:destination="@id/productsListFragment" />
+    </fragment>
+</navigation>
