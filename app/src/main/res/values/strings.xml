@@ -4,7 +4,6 @@
     <string name="titleProductsList">Products list</string>
     <string name="noDataAvailable">Data not available,\n please try again later</string>
     <string name="retry">Retry</string>
-    <string name="about">About</string>
     <string name="aboutProject">About Project</string>
     <string name="aboutProjectText"><![CDATA[<h2><strong>About application<br /></strong></h2>
                                         <p>&nbsp;</p>
