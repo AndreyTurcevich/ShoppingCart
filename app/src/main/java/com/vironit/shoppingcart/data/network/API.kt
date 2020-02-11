@@ -1,7 +1,7 @@
-package com.vironit.shoppingcart.network
+package com.vironit.shoppingcart.data.network
 
-import com.vironit.shoppingcart.model.Product
-import com.vironit.shoppingcart.model.ProductsListResponse
+import com.vironit.shoppingcart.data.model.Product
+import com.vironit.shoppingcart.data.model.ProductsListResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.Response
 import retrofit2.http.GET

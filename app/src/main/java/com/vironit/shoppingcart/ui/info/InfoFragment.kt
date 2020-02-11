@@ -45,6 +45,7 @@ class InfoFragment : Fragment() {
         }
     }
 
+    @Suppress("DEPRECATION")
     private fun setupAboutText() {
         val aboutText = getString(R.string.aboutProjectText)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

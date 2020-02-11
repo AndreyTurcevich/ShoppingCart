@@ -4,7 +4,7 @@ import android.app.Application
 
 import androidx.room.Room
 
-import com.vironit.shoppingcart.database.Database
+import com.vironit.shoppingcart.data.database.Database
 
 class App : Application() {
 

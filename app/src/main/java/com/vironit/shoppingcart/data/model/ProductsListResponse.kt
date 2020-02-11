@@ -1,4 +1,4 @@
-package com.vironit.shoppingcart.model
+package com.vironit.shoppingcart.data.model
 
 import com.google.gson.annotations.SerializedName
 

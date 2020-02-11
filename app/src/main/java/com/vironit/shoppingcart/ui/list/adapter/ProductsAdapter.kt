@@ -13,7 +13,7 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.vironit.shoppingcart.R
-import com.vironit.shoppingcart.model.Product
+import com.vironit.shoppingcart.data.model.Product
 
 class ProductsAdapter : RecyclerView.Adapter<ProductsAdapter.MainHolder>() {
 

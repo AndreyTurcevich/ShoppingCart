@@ -1,7 +1,7 @@
 package com.vironit.shoppingcart.repository
 
 import android.util.Log
-import com.vironit.shoppingcart.network.Result
+import com.vironit.shoppingcart.data.network.Result
 import retrofit2.Response
 import java.io.IOException
 

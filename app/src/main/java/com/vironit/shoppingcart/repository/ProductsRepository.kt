@@ -1,8 +1,8 @@
 package com.vironit.shoppingcart.repository
 
-import com.vironit.shoppingcart.database.ProductsDao
-import com.vironit.shoppingcart.model.Product
-import com.vironit.shoppingcart.network.API
+import com.vironit.shoppingcart.data.database.ProductsDao
+import com.vironit.shoppingcart.data.model.Product
+import com.vironit.shoppingcart.data.network.API
 
 class ProductsRepository(
     private val api: API,

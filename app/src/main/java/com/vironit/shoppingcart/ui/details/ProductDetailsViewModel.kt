@@ -2,9 +2,9 @@ package com.vironit.shoppingcart.ui.details
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.vironit.shoppingcart.database.Database
-import com.vironit.shoppingcart.model.Product
-import com.vironit.shoppingcart.network.ApiFactory
+import com.vironit.shoppingcart.data.database.Database
+import com.vironit.shoppingcart.data.model.Product
+import com.vironit.shoppingcart.data.network.ApiFactory
 import com.vironit.shoppingcart.repository.ProductsRepository
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext

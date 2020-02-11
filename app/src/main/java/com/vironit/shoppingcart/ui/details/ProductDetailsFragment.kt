@@ -17,7 +17,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.vironit.shoppingcart.App
 import com.vironit.shoppingcart.R
-import com.vironit.shoppingcart.model.Product
+import com.vironit.shoppingcart.data.model.Product
 import com.vironit.shoppingcart.utils.isInternetEnabled
 import kotlinx.android.synthetic.main.fragment_product_details.*
 import kotlinx.android.synthetic.main.fragment_products_list.pbLoading

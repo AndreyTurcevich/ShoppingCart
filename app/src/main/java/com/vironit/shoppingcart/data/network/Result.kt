@@ -1,4 +1,4 @@
-package com.vironit.shoppingcart.network
+package com.vironit.shoppingcart.data.network
 
 sealed class Result<out T : Any> {
     data class Success<out T : Any>(val data: T) : Result<T>()

@@ -1,11 +1,11 @@
-package com.vironit.shoppingcart.database
+package com.vironit.shoppingcart.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
 import androidx.room.Update
-import com.vironit.shoppingcart.model.Product
+import com.vironit.shoppingcart.data.model.Product
 
 @Dao
 interface ProductsDao {
